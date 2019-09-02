@@ -2612,22 +2612,34 @@
             },
 
             joinCommand: {
-                command: 'join',
-                rank: 'user',
-                type: 'exact',
-                functionality: function(chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
-                    else {
-                        if (basicBot.room.roulette.rouletteStatus && basicBot.room.roulette.participants.indexOf(chat.uid) < 0) {
-                            basicBot.room.roulette.participants.push(chat.uid);
-                            API.sendChat(subChat(basicBot.chat.roulettejoin, {
-                                name: chat.un
-                            }));
-                        }
-                    }
-                }
-            },
+command: 'join',
+rank: 'user',
+type: 'exact',
+functionality: function(chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+else {
+var id = chat.uid;
+var name = chat.un;
+var isDj;
+if (typeof API.getDJ() != "undefined") {
+isDj = API.getDJ().id == id ? true : false;
+} else {
+isDj = false;
+}
+var djlist = API.getWaitList();
+if (isDj === true)
+API.sendChat("@" + name + " you can only enter roulette when you are not the DJ.");
+if (isDj === false)
+if (basicBot.room.roulette.rouletteStatus && basicBot.room.roulette.participants.indexOf(chat.uid) < 0) {
+basicBot.room.roulette.participants.push(chat.uid);
+API.sendChat(subChat(basicBot.chat.roulettejoin, {
+name: chat.un
+}));
+}
+}
+}
+},
 
             jointimeCommand: {
                 command: 'jointime',
