@@ -257,14 +257,14 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: 'basicBot',
+            botName: 'Dungeon keeper',
             language: 'english',
             chatLink: 'https://raw.githack.com/sonic73/source/master/lang/en.json',
             scriptLink: 'https://raw.githack.com/sonic73/source/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 1, // 1-200
+            startupCap: 20, // 1-200
             startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupEmoji: true, // true or false
             autowoot: true,
             autoskip: false,
             smartSkip: true,
@@ -282,10 +282,10 @@
             voteSkip: false,
             voteSkipLimit: 10,
             historySkip: false,
-            timeGuard: true,
+            timeGuard: false,
             strictTimeGuard: true,
-            maximumSongLength: 10,
-            autodisable: false,
+            maximumSongLength: 6,
+            autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
             thorCommand: true,
@@ -304,17 +304,17 @@
             afkRankCheck: 'ambassador',
             motdEnabled: false,
             motdInterval: 5,
-            motd: 'Temporary Message of the Day',
+            motd: 'Testing the scripts',
             filterChat: true,
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: "Max play time 6 min or song maybe skipped (auto skipper in force at busy times). Music type is ROCK, METAL, SKA, DUBSTEP, No RAP, HIP HOP, TROLLING or be skipped/kicked. Mods decision is final.",
             themeLink: null,
-            fbLink: null,
+            fbLink: "https://www.facebook.com/groups/The.Dungeon.on.Plug.dj",
             youtubeLink: null,
             website: null,
-            intervalMessages: [],
+            intervalMessages: ["*We recommend RCS plugin and Zoom to 67% on browser for best room view*"],
             messageInterval: 5,
             songstats: true,
             commandLiteral: '!',
