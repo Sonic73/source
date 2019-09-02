@@ -314,7 +314,7 @@
             fbLink: "https://www.facebook.com/groups/The.Dungeon.on.Plug.dj",
             youtubeLink: null,
             website: null,
-            intervalMessages: ['just because I dance doesnt mean I like the song']["*We recommend RCS plugin and Zoom to 67% on browser for best room view*"},
+            intervalMessages: ["Just because I dance doesnt mean I like the song"]["*We recommend RCS plugin and Zoom to 67% on browser for best room view*"},
             messageInterval: 5,
             songstats: false,
             commandLiteral: '!',
