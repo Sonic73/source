@@ -49,7 +49,7 @@
       botName: "Dungeon Bot",
       language: "english",
       chatLink: "https://raw.githack.com/Sonic73/custom/master/lang/en.json",
-      scriptLink: "https://raw.githack.com/basicBot/source/master/basicBot.js",
+      scriptLink: "https://raw.githack.com/sonic73/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 20, // 1-200
       startupVolume: 1, // 0-100
@@ -105,13 +105,13 @@
       songstats: false,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://raw.githack.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://raw.githack.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://raw.githack.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://raw.githack.com/sonic73/source/master/NSFWlist.json",
+        OP: "https://raw.githack.com/sonic73/source/master/OPlist.json",
+        BANNED: "https://raw.githack.com/sonic73/source/master/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://raw.githack.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://raw.githack.com/sonic73/source/master/basicBot.js", extend);
 
 }).call(this);
