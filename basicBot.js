@@ -247,7 +247,7 @@
     var basicBot = {
         version: '2.12.3',
         status: false,
-        name: 'basicBot',
+        name: 'Dungeon keeper',
         loggedInID: null,
         scriptLink: 'https://raw.githack.com/sonic73/source/master/basicBot.js',
         cmdLink: 'http://git.io/245Ppg',
@@ -316,7 +316,7 @@
             website: null,
             intervalMessages: ["*We recommend RCS plugin and Zoom to 67% on browser for best room view*"],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: '!',
             blacklists: {
                 NSFW: 'https://raw.githack.com/sonic73/custom/master/blacklists/NSFWlist.json',
